@@ -91,7 +91,7 @@ ibm-sfg-prod:
     #SANDBOX_WEBAPP_PROTOCOL: https
     #SANDBOX_WEBAPP_LIST_PORT: 5001
   asi:
-    replicaCount: 2
+    replicaCount: 1
 
     resources:
       limits:
@@ -105,7 +105,7 @@ ibm-sfg-prod:
       enabled: false
       minReplicas: 2
       maxReplicas: 4
-      targetCPUUtilizationPercentage: 40
+      targetCPUUtilizationPercentage: 60
 
     frontendService:
       type: ClusterIP
